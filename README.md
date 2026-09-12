@@ -65,6 +65,21 @@ CityFlo-Bus-Service-Analytics
 
 ---
 
+## Project Workflow
+
+```mermaid
+flowchart LR
+    A[Raw Dataset] --> B[Data Cleaning]
+    B --> C[Cleaned Dataset]
+    C --> D[Exploratory Data Analysis]
+    D --> E[Statistical Analysis]
+    E --> F[KPI Calculation]
+    F --> G[Looker Studio Dashboard]
+    G --> H[Insights and Final Report]
+```
+
+---
+
 ## Key Performance Indicators
 
 - Net Revenue: ₹859,623.50
@@ -81,14 +96,16 @@ CityFlo-Bus-Service-Analytics
 
 ## Data Cleaning
 
-The data cleaning process included:
+The raw dataset was cleaned and prepared before performing the analysis.
+
+The main cleaning steps included:
 
 - Checking dataset structure and data types
-- Handling missing values
+- Identifying and handling missing values
 - Removing duplicate records
-- Verifying numerical and categorical fields
-- Creating derived columns
-- Preparing the cleaned dataset for analysis
+- Verifying numerical and categorical columns
+- Creating derived fields required for analysis
+- Exporting the final cleaned dataset
 
 Derived fields included:
 
@@ -100,9 +117,14 @@ Derived fields included:
 - Net Revenue
 - Age Group
 
+### Data Cleaning Notebook
+
+[View Data Cleaning Notebook](Data%20Cleaning/CityFlo_Bus_Service_Data_Cleaning.ipynb)
 ---
 
-## Data Analysis
+## Exploratory Data Analysis (EDA)
+
+The cleaned dataset was analyzed to understand trip demand, revenue, service performance, delays, customer behaviour, and booking patterns.
 
 The analysis included:
 
@@ -113,6 +135,10 @@ The analysis included:
 - Hypothesis Testing
 - KPI Analysis
 - Dashboard Preparation and Visualisation
+
+### Data Analysis Notebook
+
+[View Data Analysis Notebook](Data%20Analysis/CityFlo_Bus_Service_Data_Analysis.ipynb)
 
 ---
 
@@ -209,7 +235,9 @@ This page focuses on customer demographics, ratings, complaints, payment prefere
 
 ## Project Report
 
-The complete project report is available in the `Report` folder.
+The complete project report contains the project methodology, data preparation, analysis, KPIs, dashboard findings, recommendations, limitations, and conclusion.
+
+[View Full Project Report](Report/CityFlo_Bus_Service_Analytics_Final_Report.pdf)
 
 ---
 
