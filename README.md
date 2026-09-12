@@ -96,26 +96,21 @@ flowchart LR
 
 ## Data Cleaning
 
-The raw dataset was cleaned and prepared before performing the analysis.
+The raw dataset contained duplicate records, missing values, inconsistent category labels, mixed data types, extra spaces, and a few invalid or unrealistic values.
 
 The main cleaning steps included:
 
-- Checking dataset structure and data types
-- Identifying and handling missing values
-- Removing duplicate records
-- Verifying numerical and categorical columns
-- Creating derived fields required for analysis
-- Exporting the final cleaned dataset
+- Removed duplicate trip records.
+- Cleaned extra spaces and standardized inconsistent text and category values.
+- Converted fare and other numerical columns into proper numeric formats.
+- Standardized boolean fields such as peak-hour, GPS, and complaint indicators.
+- Handled missing values using suitable methods such as median values or zero where appropriate.
+- Checked and corrected unrealistic values such as invalid ages, occupancy percentages, and fares.
+- Removed unnecessary columns that were not required for the analysis.
+- Converted trip dates into proper date format.
+- Created useful derived fields for further analysis.
 
-Derived fields included:
-
-- Trip Year
-- Trip Month
-- Trip Weekday
-- Delay Minutes
-- Delay Status
-- Net Revenue
-- Age Group
+The derived fields included `trip_year`, `trip_month`, `trip_weekday`, `delay_minutes`, `is_delayed`, `net_revenue_inr`, and `age_group`.
 
 ### Data Cleaning Notebook
 
