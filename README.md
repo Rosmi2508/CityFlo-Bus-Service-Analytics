@@ -67,62 +67,51 @@ CityFlo-Bus-Service-Analytics
 
 ## Project Workflow
 
-## Project Workflow
-
-The project followed a structured process from raw data preparation to final dashboard development and reporting.
-
 ```mermaid
 flowchart TD
+    A[Raw Bus Service Dataset]
+    --> B[Data Inspection & Quality Check]
 
-    A[Raw CityFlo Bus Service Dataset]
+    B --> C[Data Cleaning & Standardization]
 
-    subgraph P1["1. Data Preparation"]
-        B[Data Inspection<br/>Shape • Data Types • Missing Values]
-        C[Data Cleaning<br/>Duplicates • Missing Values • Invalid Values]
-        D[Data Standardization<br/>Categories • Boolean Fields • Date & Numeric Formats]
-        E[Feature Engineering<br/>Delay • Net Revenue • Age Group • Date Features]
-        F[Cleaned Dataset]
-    end
+    C --> D[Feature Engineering]
 
-    subgraph P2["2. Data Analysis"]
-        G[Data Verification]
-        H[Exploratory Data Analysis<br/>Univariate • Bivariate • Multivariate]
-        I[Statistical Analysis<br/>Pearson • t-test • ANOVA • Chi-Square]
-        J[KPI Calculation]
-    end
+    D --> E[Cleaned Dataset]
 
-    subgraph P3["3. Dashboard & Reporting"]
-        K[Dashboard Data Preparation]
-        L[Looker Studio Dashboard<br/>4 Analytical Pages]
-        M[Key Findings & Business Insights]
-        N[Final Project Report]
-    end
+    E --> F[Exploratory Data Analysis]
 
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-    G --> H
-    H --> I
-    I --> J
-    J --> K
-    K --> L
-    L --> M
-    M --> N
+    F --> G[Statistical Analysis & Hypothesis Testing]
+
+    G --> H[KPI Calculation]
+
+    H --> I[Dashboard Data Preparation]
+
+    I --> J[Looker Studio Dashboard]
+
+    J --> K[Key Findings & Business Insights]
+
+    K --> L[Final Project Report]
 ```
 
-### Workflow Summary
+### Workflow Interpretation
 
-**Data Preparation:**  
-The raw dataset was inspected, cleaned, standardized, and transformed into a reliable analytical dataset. New fields such as delay minutes, net revenue, date features, and age groups were also created.
+**1. Data Inspection & Quality Check**  
+The raw dataset was first examined to understand its structure, columns, data types, missing values, duplicate records, and inconsistent values.
 
-**Data Analysis:**  
-The cleaned data was explored using univariate, bivariate, and multivariate analysis. Statistical tests were performed to validate selected relationships, followed by calculation of the main business KPIs.
+**2. Data Cleaning & Standardization**  
+Duplicate records were removed, missing and invalid values were handled, text and category values were standardized, and numerical and date fields were converted into suitable formats.
 
-**Dashboard & Reporting:**  
-The analytical results were prepared for a four-page Looker Studio dashboard covering revenue, demand, operations, and customer insights. The final findings and recommendations were then documented in the project report.
+**3. Feature Engineering**  
+New analytical fields such as trip year, month, weekday, delay minutes, delay status, net revenue, and age group were created from the cleaned data.
+
+**4. Exploratory & Statistical Analysis**  
+The cleaned dataset was analyzed using univariate, bivariate, and multivariate techniques. Statistical tests were also performed to study relationships between important variables.
+
+**5. KPI & Dashboard Preparation**  
+Important performance indicators such as revenue, completed trips, cancellation rate, on-time performance, occupancy, ratings, and complaint rate were calculated and prepared for visualization.
+
+**6. Dashboard & Final Insights**  
+A four-page Looker Studio dashboard was developed to present revenue, demand, operational performance, and customer insights. The final findings were summarized in the project report.
 
 ```
 
