@@ -34,37 +34,6 @@ The project includes both the raw dataset and the cleaned dataset used for analy
 
 ---
 
-## Project Structure
-
-```text
-CityFlo-Bus-Service-Analytics
-│
-├── Dashboard
-│   ├── Page_1_Executive_Overview.jpg
-│   ├── Page_2_Revenue_Demand_Analysis.jpg
-│   ├── Page_3_Operations_Service_Performance.jpg
-│   ├── Page_4_Customer_Booking_Insights.jpg
-│   └── Looker_Studio_Dashboard_Link.txt
-│
-├── Data Analysis
-│   └── CityFlo_Bus_Service_Data_Analysis.ipynb
-│
-├── Data Cleaning
-│   └── CityFlo_Bus_Service_Data_Cleaning.ipynb
-│
-├── Datasets
-│   ├── cityflo_bus_service_metro_cities.csv
-│   └── cityflo_bus_service_metro_cities_cleaned.csv
-│
-├── Report
-│   └── CityFlo_Bus_Service_Analytics_Final_Report.pdf
-│
-├── .gitignore
-└── README.md
-```
-
----
-
 ## Project Workflow
 
 The project followed a structured process from raw data preparation to final dashboard development and reporting.
@@ -124,20 +93,6 @@ The analytical results were prepared for a four-page Looker Studio dashboard cov
 
 ---
 
-## Key Performance Indicators
-
-- Net Revenue: ₹859,623.50
-- Total Trips: 3,200
-- Unique Customers: 1,251
-- Completed Trips: 2,494
-- Cancellation Rate: 22.06%
-- On-Time Performance: 68.75%
-- Average Occupancy: 57.86%
-- Average Rating: 3.80
-- Complaint Rate: 6.41%
-
----
-
 ## Data Cleaning
 
 The raw dataset contained duplicate records, missing values, inconsistent category labels, mixed data types, extra spaces, and a few invalid or unrealistic values.
@@ -192,6 +147,20 @@ Statistical tests were performed to validate selected relationships:
 
 ---
 
+## Key Performance Indicators
+
+- Net Revenue: ₹859,623.50
+- Total Trips: 3,200
+- Unique Customers: 1,251
+- Completed Trips: 2,494
+- Cancellation Rate: 22.06%
+- On-Time Performance: 68.75%
+- Average Occupancy: 57.86%
+- Average Rating: 3.80
+- Complaint Rate: 6.41%
+
+---
+
 ## Live Looker Studio Dashboard
 
 [View Interactive Dashboard](https://datastudio.google.com/reporting/9d322950-e68b-4809-adf3-e8bfe69dd5fb)
@@ -206,13 +175,26 @@ Statistical tests were performed to validate selected relationships:
 
 This page provides an overall view of revenue, trip activity, trip status, and bus type performance.
 
+**Includes:**
+- Monthly Revenue & Trip Volume
+- Net Revenue by City
+- Trip Status Distribution
+- Trip Volume by Bus Type
+
 ---
 
 ### Page 2 — Revenue & Demand Analysis
 
 ![Revenue and Demand Analysis](Dashboard/Page_2_Revenue_Demand_Analysis.jpg)
 
-This page focuses on monthly revenue trends, route-level demand, booking channels, subscription types, and weekday trip demand across cities.
+This page focuses on revenue trends and demand patterns across routes, booking channels, subscription types, cities, and weekdays.
+
+**Includes:**
+- Monthly Net Revenue Trend
+- Route Demand vs Net Revenue
+- Net Revenue by Booking Channel
+- Revenue Contribution by Subscription Type
+- Trip Demand by City & Weekday
 
 ---
 
@@ -220,7 +202,14 @@ This page focuses on monthly revenue trends, route-level demand, booking channel
 
 ![Operations and Service Performance](Dashboard/Page_3_Operations_Service_Performance.jpg)
 
-This page focuses on trip delays, trip status, bus occupancy, service punctuality, and cancellation reasons.
+This page analyzes service performance using trip delays, trip status, occupancy, punctuality, and cancellation information.
+
+**Includes:**
+- Average Delay by City
+- Trip Status by City
+- Bus Type Occupancy & Delay
+- Trip Delay Status
+- Cancellation Reasons
 
 ---
 
@@ -228,7 +217,14 @@ This page focuses on trip delays, trip status, bus occupancy, service punctualit
 
 ![Customer and Booking Insights](Dashboard/Page_4_Customer_Booking_Insights.jpg)
 
-This page focuses on customer demographics, ratings, complaints, payment preferences, and booking channel behaviour.
+This page focuses on customer demographics, ratings, complaints, payment preferences, and booking behaviour.
+
+**Includes:**
+- Gender Mix by Age Group
+- Customer Rating Distribution
+- Customer Experience by City
+- Payment Mode Usage
+- Payment Modes by Booking Channel
 
 ---
 
@@ -248,38 +244,34 @@ This page focuses on customer demographics, ratings, complaints, payment prefere
 
 ---
 
-## Dashboard Pages
+## Project Structure
 
-### Page 1 — Executive Overview
-
-- Monthly Revenue & Trip Volume
-- Net Revenue by City
-- Trip Status Distribution
-- Trip Volume by Bus Type
-
-### Page 2 — Revenue & Demand Analysis
-
-- Monthly Net Revenue Trend
-- Route Demand vs Net Revenue
-- Net Revenue by Booking Channel
-- Revenue Contribution by Subscription Type
-- Trip Demand by City & Weekday
-
-### Page 3 — Operations & Service Performance
-
-- Average Delay by City
-- Trip Status by City
-- Bus Type Occupancy & Delay
-- Trip Delay Status
-- Cancellation Reasons
-
-### Page 4 — Customer & Booking Insights
-
-- Gender Mix by Age Group
-- Customer Rating Distribution
-- Customer Experience by City
-- Payment Mode Usage
-- Payment Modes by Booking Channel
+```text
+CityFlo-Bus-Service-Analytics
+│
+├── Dashboard
+│   ├── Page_1_Executive_Overview.jpg
+│   ├── Page_2_Revenue_Demand_Analysis.jpg
+│   ├── Page_3_Operations_Service_Performance.jpg
+│   ├── Page_4_Customer_Booking_Insights.jpg
+│   └── Looker_Studio_Dashboard_Link.txt
+│
+├── Data Analysis
+│   └── CityFlo_Bus_Service_Data_Analysis.ipynb
+│
+├── Data Cleaning
+│   └── CityFlo_Bus_Service_Data_Cleaning.ipynb
+│
+├── Datasets
+│   ├── cityflo_bus_service_metro_cities.csv
+│   └── cityflo_bus_service_metro_cities_cleaned.csv
+│
+├── Report
+│   └── CityFlo_Bus_Service_Analytics_Final_Report.pdf
+│
+├── .gitignore
+└── README.md
+```
 
 ---
 
