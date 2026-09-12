@@ -125,17 +125,54 @@ Derived fields included:
 
 ## Exploratory Data Analysis (EDA)
 
-The cleaned dataset was analyzed to understand trip demand, revenue, service performance, delays, customer behaviour, and booking patterns.
+Exploratory Data Analysis was performed on the cleaned dataset to understand the main patterns in revenue, trip demand, fare, delays, occupancy, customer ratings, and service performance.
+
+The analysis was divided into the following parts:
+
+### Univariate Analysis
+
+Individual numerical and categorical variables were studied separately.
+
+- Numerical variables such as age, distance, fare, delay, occupancy, and net revenue were analyzed using histograms, box plots, and summary statistics.
+- Mean, median, mode, standard deviation, skewness, and kurtosis were calculated to understand the distribution of numerical variables.
+- Categorical variables such as city, bus type, and trip status were analyzed using frequency counts and charts.
+
+### Bivariate Analysis
+
+Relationships between two variables were examined to understand how different factors were connected.
 
 The analysis included:
 
-- Data Verification
-- Univariate Analysis
-- Bivariate Analysis
-- Multivariate Analysis
-- Hypothesis Testing
-- KPI Analysis
-- Dashboard Preparation and Visualisation
+- Fare vs Distance
+- Fare by Bus Type
+- Average Rating by City
+- Trip Status by City
+
+A scatter plot and Pearson correlation were used to study the relationship between trip distance and fare.
+
+### Multivariate Analysis
+
+Multiple variables were analyzed together to identify broader patterns and relationships.
+
+The analysis included:
+
+- Pair plots across numerical variables
+- Correlation heatmap
+- Fare comparison across cities and bus types
+- Delay distribution across different cities
+
+These analyses helped identify relationships between revenue, fare, distance, delays, occupancy, and service categories.
+
+### Statistical Analysis
+
+Statistical tests were also performed to check whether selected relationships were statistically significant.
+
+The following tests were used:
+
+- Pearson Correlation — Distance and Fare
+- Independent t-test — Peak Hour and Trip Delay
+- One-Way ANOVA — Bus Type and Fare
+- Chi-Square Test — City and Trip Status
 
 ### Data Analysis Notebook
 
