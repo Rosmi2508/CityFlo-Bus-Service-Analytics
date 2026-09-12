@@ -67,15 +67,63 @@ CityFlo-Bus-Service-Analytics
 
 ## Project Workflow
 
+## Project Workflow
+
+The project followed a structured process from raw data preparation to final dashboard development and reporting.
+
 ```mermaid
-flowchart LR
-    A[Raw Dataset] --> B[Data Cleaning]
-    B --> C[Cleaned Dataset]
-    C --> D[Exploratory Data Analysis]
-    D --> E[Statistical Analysis]
-    E --> F[KPI Calculation]
-    F --> G[Looker Studio Dashboard]
-    G --> H[Insights and Final Report]
+flowchart TD
+
+    A[Raw CityFlo Bus Service Dataset]
+
+    subgraph P1["1. Data Preparation"]
+        B[Data Inspection<br/>Shape • Data Types • Missing Values]
+        C[Data Cleaning<br/>Duplicates • Missing Values • Invalid Values]
+        D[Data Standardization<br/>Categories • Boolean Fields • Date & Numeric Formats]
+        E[Feature Engineering<br/>Delay • Net Revenue • Age Group • Date Features]
+        F[Cleaned Dataset]
+    end
+
+    subgraph P2["2. Data Analysis"]
+        G[Data Verification]
+        H[Exploratory Data Analysis<br/>Univariate • Bivariate • Multivariate]
+        I[Statistical Analysis<br/>Pearson • t-test • ANOVA • Chi-Square]
+        J[KPI Calculation]
+    end
+
+    subgraph P3["3. Dashboard & Reporting"]
+        K[Dashboard Data Preparation]
+        L[Looker Studio Dashboard<br/>4 Analytical Pages]
+        M[Key Findings & Business Insights]
+        N[Final Project Report]
+    end
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    J --> K
+    K --> L
+    L --> M
+    M --> N
+```
+
+### Workflow Summary
+
+**Data Preparation:**  
+The raw dataset was inspected, cleaned, standardized, and transformed into a reliable analytical dataset. New fields such as delay minutes, net revenue, date features, and age groups were also created.
+
+**Data Analysis:**  
+The cleaned data was explored using univariate, bivariate, and multivariate analysis. Statistical tests were performed to validate selected relationships, followed by calculation of the main business KPIs.
+
+**Dashboard & Reporting:**  
+The analytical results were prepared for a four-page Looker Studio dashboard covering revenue, demand, operations, and customer insights. The final findings and recommendations were then documented in the project report.
+
 ```
 
 ---
