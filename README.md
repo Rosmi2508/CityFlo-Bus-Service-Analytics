@@ -8,6 +8,13 @@ The analysis focuses on revenue, trip demand, operational performance, delays, c
 
 Python was used for data cleaning, exploratory analysis, statistical testing, and KPI calculation. Looker Studio was used to create the final interactive dashboard.
 
+## Quick Links
+
+- [Live Looker Studio Dashboard](https://datastudio.google.com/reporting/9d322950-e68b-4809-adf3-e8bfe69dd5fb)
+- [Data Cleaning Notebook](Data%20Cleaning/CityFlo_Bus_Service_Data_Cleaning.ipynb)
+- [Data Analysis Notebook](Data%20Analysis/CityFlo_Bus_Service_Data_Analysis.ipynb)
+- [Full Project Report](Report/CityFlo_Bus_Service_Analytics_Final_Report.pdf)
+
 ---
 
 ## Tools Used
@@ -36,49 +43,20 @@ The project includes both the raw dataset and the cleaned dataset used for analy
 
 ## Project Workflow
 
-The project followed a structured process from raw data preparation to final dashboard development and reporting.
-
 ```mermaid
-flowchart TD
-
-    A[Raw CityFlo Bus Service Dataset]
-
-    subgraph P1["1. Data Preparation"]
-        B[Data Inspection<br/>Shape • Data Types • Missing Values]
-        C[Data Cleaning<br/>Duplicates • Missing Values • Invalid Values]
-        D[Data Standardization<br/>Categories • Boolean Fields • Date & Numeric Formats]
-        E[Feature Engineering<br/>Delay • Net Revenue • Age Group • Date Features]
-        F[Cleaned Dataset]
-    end
-
-    subgraph P2["2. Data Analysis"]
-        G[Data Verification]
-        H[Exploratory Data Analysis<br/>Univariate • Bivariate • Multivariate]
-        I[Statistical Analysis<br/>Pearson • t-test • ANOVA • Chi-Square]
-        J[KPI Calculation]
-    end
-
-    subgraph P3["3. Dashboard & Reporting"]
-        K[Dashboard Data Preparation]
-        L[Looker Studio Dashboard<br/>4 Analytical Pages]
-        M[Key Findings & Business Insights]
-        N[Final Project Report]
-    end
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-    G --> H
-    H --> I
-    I --> J
-    J --> K
-    K --> L
-    L --> M
-    M --> N
+flowchart LR
+    A[Raw Dataset] --> B[Data Inspection]
+    B --> C[Data Cleaning & Standardization]
+    C --> D[Feature Engineering]
+    D --> E[EDA & Statistical Analysis]
+    E --> F[KPI Calculation]
+    F --> G[Looker Studio Dashboard]
+    G --> H[Key Findings & Final Report]
 ```
+
+The project followed an end-to-end analytics workflow, starting with raw data inspection and cleaning, followed by feature engineering, exploratory and statistical analysis, KPI calculation, dashboard development, and final business insights.
+
+---
 
 ### Workflow Summary
 
@@ -149,15 +127,17 @@ Statistical tests were performed to validate selected relationships:
 
 ## Key Performance Indicators
 
-- Net Revenue: ₹859,623.50
-- Total Trips: 3,200
-- Unique Customers: 1,251
-- Completed Trips: 2,494
-- Cancellation Rate: 22.06%
-- On-Time Performance: 68.75%
-- Average Occupancy: 57.86%
-- Average Rating: 3.80
-- Complaint Rate: 6.41%
+| KPI | Value |
+|---|---:|
+| Net Revenue | ₹859,623.50 |
+| Total Trips | 3,200 |
+| Unique Customers | 1,251 |
+| Completed Trips | 2,494 |
+| Cancellation Rate | 22.06% |
+| On-Time Performance | 68.75% |
+| Average Occupancy | 57.86% |
+| Average Rating | 3.80 |
+| Complaint Rate | 6.41% |
 
 ---
 
@@ -230,17 +210,13 @@ This page focuses on customer demographics, ratings, complaints, payment prefere
 
 ## Key Findings
 
-- The dataset contains 3,200 bus trip records across six metro cities.
-- Total net revenue was ₹859,623.50.
-- Mumbai generated the highest city-level revenue.
-- A total of 2,494 trips were completed.
-- The overall cancellation rate was 22.06%.
+- Total net revenue reached ₹859,623.50, with Mumbai generating the highest city-level revenue.
+- 2,494 of 3,200 trips were completed, while the overall cancellation rate was 22.06%.
 - Customer Request was the most common cancellation reason.
 - Overall On-Time Performance was 68.75%.
 - Revenue was distributed fairly evenly across booking channels and subscription types.
-- The average customer rating was 3.80.
-- The complaint rate was 6.41%.
-- Customer demand, revenue, operational performance, and booking behaviour varied across cities, routes, and service categories.
+- Average customer rating was 3.80, with a complaint rate of 6.41%.
+- Revenue, demand, and operational performance varied across cities, routes, and service categories.
 
 ---
 
