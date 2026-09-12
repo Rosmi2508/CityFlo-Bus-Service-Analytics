@@ -125,50 +125,23 @@ Derived fields included:
 
 ## Exploratory Data Analysis (EDA)
 
-Exploratory Data Analysis was performed on the cleaned dataset to understand the main patterns in revenue, trip demand, fare, delays, occupancy, customer ratings, and service performance.
-
-The analysis was divided into the following parts:
+The cleaned dataset was analyzed to understand patterns in trip demand, revenue, fare, delays, occupancy, customer ratings, and service performance.
 
 ### Univariate Analysis
-
-Individual numerical and categorical variables were studied separately.
-
-- Numerical variables such as age, distance, fare, delay, occupancy, and net revenue were analyzed using histograms, box plots, and summary statistics.
-- Mean, median, mode, standard deviation, skewness, and kurtosis were calculated to understand the distribution of numerical variables.
-- Categorical variables such as city, bus type, and trip status were analyzed using frequency counts and charts.
+Individual variables were examined using histograms, box plots, summary statistics, frequency counts, and categorical charts. Numerical features such as age, distance, fare, delay, occupancy, and net revenue were analyzed along with categories such as city, bus type, and trip status.
 
 ### Bivariate Analysis
-
-Relationships between two variables were examined to understand how different factors were connected.
-
-The analysis included:
-
+Relationships between two variables were studied using:
 - Fare vs Distance
 - Fare by Bus Type
 - Average Rating by City
 - Trip Status by City
 
-A scatter plot and Pearson correlation were used to study the relationship between trip distance and fare.
-
 ### Multivariate Analysis
-
-Multiple variables were analyzed together to identify broader patterns and relationships.
-
-The analysis included:
-
-- Pair plots across numerical variables
-- Correlation heatmap
-- Fare comparison across cities and bus types
-- Delay distribution across different cities
-
-These analyses helped identify relationships between revenue, fare, distance, delays, occupancy, and service categories.
+Multiple variables were analyzed together using pair plots, correlation heatmaps, city and bus-type comparisons, and city-wise delay distributions.
 
 ### Statistical Analysis
-
-Statistical tests were also performed to check whether selected relationships were statistically significant.
-
-The following tests were used:
-
+Statistical tests were performed to validate selected relationships:
 - Pearson Correlation — Distance and Fare
 - Independent t-test — Peak Hour and Trip Delay
 - One-Way ANOVA — Bus Type and Fare
