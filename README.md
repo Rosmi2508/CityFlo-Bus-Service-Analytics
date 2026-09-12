@@ -60,14 +60,11 @@ The project followed an end-to-end analytics workflow, starting with raw data in
 
 ### Workflow Summary
 
-**Data Preparation:**  
-The raw dataset was inspected, cleaned, standardized, and transformed into a reliable analytical dataset. New fields such as delay minutes, net revenue, date features, and age groups were also created.
+**Data Preparation:** Raw data was inspected, cleaned, standardized, and enhanced with derived fields required for analysis.
 
-**Data Analysis:**  
-The cleaned data was explored using univariate, bivariate, and multivariate analysis. Statistical tests were performed to validate selected relationships, followed by calculation of the main business KPIs.
+**Data Analysis:** Univariate, bivariate, and multivariate analysis were performed along with statistical testing and KPI calculation.
 
-**Dashboard & Reporting:**  
-The analytical results were prepared for a four-page Looker Studio dashboard covering revenue, demand, operations, and customer insights. The final findings and recommendations were then documented in the project report.
+**Dashboard & Reporting:** The analyzed data was transformed into a four-page Looker Studio dashboard, followed by key business insights and the final project report.
 
 ---
 
