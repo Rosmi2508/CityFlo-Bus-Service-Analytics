@@ -13,7 +13,7 @@ Python was used for data cleaning, exploratory analysis, statistical testing, an
 - [Live Looker Studio Dashboard](https://datastudio.google.com/reporting/9d322950-e68b-4809-adf3-e8bfe69dd5fb)
 - [Data Cleaning Notebook](Data%20Cleaning/CityFlo_Bus_Service_Data_Cleaning.ipynb)
 - [Data Analysis Notebook](Data%20Analysis/CityFlo_Bus_Service_Data_Analysis.ipynb)
-- [Full Project Report](Report/Cityflo_Bus_Service_Metro_Cities_Analytics_Report.docx)
+- [Full Project Report](Report/Cityflo_Bus_Service_Metro_Cities_Analytics_Report.pdf)
 
 ---
 
@@ -252,7 +252,7 @@ CityFlo-Bus-Service-Analytics
 
 The complete project report contains the project methodology, data preparation, analysis, KPIs, dashboard findings, recommendations, limitations, and conclusion.
 
-[View Full Project Report](Report/Cityflo_Bus_Service_Metro_Cities_Analytics_Report.docx)
+[View Full Project Report](Report/Cityflo_Bus_Service_Metro_Cities_Analytics_Report.pdf)
 
 ---
 
