@@ -122,8 +122,6 @@ The cleaned data was explored using univariate, bivariate, and multivariate anal
 **Dashboard & Reporting:**  
 The analytical results were prepared for a four-page Looker Studio dashboard covering revenue, demand, operations, and customer insights. The final findings and recommendations were then documented in the project report.
 
-```
-```
 ---
 
 ## Key Performance Indicators
